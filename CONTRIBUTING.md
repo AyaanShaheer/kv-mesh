@@ -39,7 +39,7 @@ KV-Mesh spans a polyglot architecture:
 ### 2. Clone and Setup
 
 ```bash
-git clone https://github.com/your-username/kv-mesh.git
+git clone https://github.com/AyaanShaheer/kv-mesh.git
 cd kv-mesh
 ```
 
