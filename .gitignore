@@ -1,0 +1,31 @@
+# Go binaries
+gateway/bin/
+
+# Python environments & cache
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# C++ Build Artifacts
+build/
+*.so
+*.o
+*.out
+*.app
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db

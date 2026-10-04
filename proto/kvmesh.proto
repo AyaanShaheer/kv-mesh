@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+package kvmesh;
+
+option go_package = "kv-mesh/gateway/pb";
+
+// The service exposed by the Python Worker node to the Go Gateway
+service WorkerNode {
+    // Standard generation request, streams tokens back
+    rpc GenerateStream (GenerateRequest) returns (stream GenerateResponse);
+}
+
+// The service exposed by the Go Gateway to collect telemetry from Workers
+service GatewayNode {
+    // Workers periodically send heartbeats with their KV cache state and VRAM load
+    rpc SendHeartbeat (HeartbeatRequest) returns (HeartbeatAck);
+}
+
+// --- Messages ---
+
+message GenerateRequest {
+    string prompt = 1;
+    int32 max_tokens = 2;
+    float temperature = 3;
+    // We can add a unique request ID for tracing
+    string request_id = 4;
+}
+
+message GenerateResponse {
+    string text = 1;
+    bool is_finished = 2;
+}
+
+message HeartbeatRequest {
+    string worker_id = 1;
+    string grpc_address = 2;       // How the gateway can reach this worker
+    float vram_utilization = 3;    // e.g., 0.85 for 85% full
+    // For Phase 2: We will send hashed prefixes of what currently lives in this worker's KV Cache
+    repeated uint64 cached_prefixes = 4; 
+}
+
+message HeartbeatAck {
+    bool success = 1;
+}
