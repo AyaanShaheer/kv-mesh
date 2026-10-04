@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "95c6c4d2-53b6-4e50-8e3b-0b6f755e0a77",
+  "status": "current",
+  "command": "deliver",
+  "type": "sequence",
+  "input": "D:\\kv-mesh\\.archify\\sequence-kvmesh-lifecycle-20261004-201500\\candidate.json",
+  "output": "D:\\kv-mesh\\.archify\\sequence-kvmesh-lifecycle-20261004-201500\\kvmesh-sequence.html",
+  "specification": {
+    "sha256": "cad908c303a0479c70139c23bfa0d1ce87c55c61abdfd2a2009f12473ffea67c",
+    "bytes": 4274
+  },
+  "artifact": {
+    "sha256": "d347d96c7bbafcdfd87be11f11bd89db13afbba1444b77149d269a9acc374085",
+    "bytes": 759920
+  }
+}

@@ -1,5 +1,8 @@
-# Go binaries
+# Go binaries & build artifacts
 gateway/bin/
+*.test
+coverage.out
+*.prof
 
 # Python environments & cache
 venv/
@@ -12,15 +15,22 @@ __pycache__/
 env/
 pip-log.txt
 pip-delete-this-directory.txt
+*.egg-info/
+dist/
 
 # C++ Build Artifacts
 build/
 *.so
 *.o
+*.obj
 *.out
 *.app
+*.dll
+*.lib
+*.exp
+*.pdb
 
-# IDEs
+# IDEs & Editor metadata
 .vscode/
 .idea/
 *.swp
@@ -29,3 +39,16 @@ build/
 # OS generated files
 .DS_Store
 Thumbs.db
+ehthumbs.db
+
+# Agent skills & local agent environments
+.agents/
+skills-lock.json
+
+# Archify ephemeral locks and staging
+**/.archify-delivery-lock.json
+**/.archify-render-*.tmp
+**/.archify-delivery-*/
+**/.archify-remove-*/
+**/*.delivery-lock.json
+**/*.delivery-pending.json

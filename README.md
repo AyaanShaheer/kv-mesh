@@ -42,6 +42,11 @@ In modern Large Language Model (LLM) serving architectures, **Time-To-First-Toke
 
 ## 🏛️ High-Level System Architecture
 
+> 🎨 **Interactive Archify Visualizations**: This project includes verifiable, interactive architecture and sequence diagrams created with **[Archify](https://github.com/tt-a1i/archify)** featuring dark/light themes, pan & zoom, component inspections, and trace animation.
+> 
+> - 🌐 **[Explore Interactive HLD Architecture Diagram (.html)](.archify/architecture-kvmesh-hld-20261004-201500/kvmesh-architecture.html)** — *Validation: 9/9 checks passed, 0 composition errors*
+> - ⚡ **[Explore Interactive Request Sequence Diagram (.html)](.archify/sequence-kvmesh-lifecycle-20261004-201500/kvmesh-sequence.html)** — *Validation: 9/9 checks passed, trace animation enabled*
+
 ```mermaid
 graph TB
     subgraph Clients["Clients & Applications"]
@@ -97,6 +102,8 @@ graph TB
 ## 🔄 Request Lifecycle & Cache Hit Sequence
 
 The diagram below illustrates the end-to-end flow when a request matches an existing prefix in the mesh, versus when memory pressure triggers the heterogeneous C++ tiered offloader:
+
+> 💡 *View the full interactive version with step-by-step trace animations in **[kvmesh-sequence.html](.archify/sequence-kvmesh-lifecycle-20261004-201500/kvmesh-sequence.html)**.*
 
 ```mermaid
 sequenceDiagram
@@ -173,6 +180,9 @@ Workers run a background daemon thread that periodically transmits telemetry:
 
 ```
 kv-mesh/
+├── .archify/                         # Interactive Archify visual diagrams
+│   ├── architecture-kvmesh-hld-*/    # System architecture (candidate.json & HTML)
+│   └── sequence-kvmesh-lifecycle-*/  # Request lifecycle sequence (candidate.json & HTML)
 ├── proto/
 │   └── kvmesh.proto                  # Protobuf definition (WorkerNode & GatewayNode services)
 ├── gateway/
