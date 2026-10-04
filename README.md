@@ -42,17 +42,6 @@ In modern Large Language Model (LLM) serving architectures, **Time-To-First-Toke
 
 ## 🏛️ High-Level System Architecture
 
-<div align="center">
-  <img src="./.archify/architecture-kvmesh-hld-20261004-201500/architecture.svg" alt="KV-Mesh Distributed Inference Architecture" width="100%" />
-  <p><em>System Architecture generated and validated with <a href="https://github.com/tt-a1i/archify">Archify</a> (9/9 showcase checks passed).</em></p>
-  <p>
-    👉 <a href="./.archify/architecture-kvmesh-hld-20261004-201500/kvmesh-architecture.html"><strong>Open Interactive Web Viewer in Browser (.html)</strong></a> — <em>Explore with pan & zoom, component inspection, search, and dark/light themes.</em>
-  </p>
-</div>
-
-<details>
-<summary><b>View Mermaid Fallback Diagram</b></summary>
-
 ```mermaid
 graph TB
     subgraph Clients["Clients & Applications"]
@@ -103,24 +92,11 @@ graph TB
     WB_HB -->|"3-sec Telemetry Heartbeat"| RoutingTable
 ```
 
-</details>
-
 ---
 
 ## 🔄 Request Lifecycle & Cache Hit Sequence
 
 The diagram below illustrates the end-to-end flow when a request matches an existing prefix in the mesh, versus when memory pressure triggers the heterogeneous C++ tiered offloader:
-
-<div align="center">
-  <img src="./.archify/sequence-kvmesh-lifecycle-20261004-201500/sequence.svg" alt="KV-Mesh Request Lifecycle & Cache Hit Sequence" width="100%" />
-  <p><em>Request Lifecycle Sequence generated and validated with <a href="https://github.com/tt-a1i/archify">Archify</a> (9/9 showcase checks passed).</em></p>
-  <p>
-    👉 <a href="./.archify/sequence-kvmesh-lifecycle-20261004-201500/kvmesh-sequence.html"><strong>Open Interactive Sequence Viewer in Browser (.html)</strong></a> — <em>Includes animated message tracing and timeline stepping.</em>
-  </p>
-</div>
-
-<details>
-<summary><b>View Mermaid Fallback Sequence</b></summary>
 
 ```mermaid
 sequenceDiagram
@@ -169,8 +145,6 @@ sequenceDiagram
     Gateway-->>Client: Stream Complete
 ```
 
-</details>
-
 ---
 
 ## 🌟 Key Technical Features
@@ -199,9 +173,6 @@ Workers run a background daemon thread that periodically transmits telemetry:
 
 ```
 kv-mesh/
-├── .archify/                         # Interactive Archify visual diagrams
-│   ├── architecture-kvmesh-hld-*/    # System architecture (candidate.json & HTML)
-│   └── sequence-kvmesh-lifecycle-*/  # Request lifecycle sequence (candidate.json & HTML)
 ├── proto/
 │   └── kvmesh.proto                  # Protobuf definition (WorkerNode & GatewayNode services)
 ├── gateway/
