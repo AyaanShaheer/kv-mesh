@@ -1,0 +1,167 @@
+{
+  "note": "Host-memory copy timings of the pybind11 byte pool. These are NOT PCIe or GPU transfer latencies.",
+  "rows": [
+    {
+      "operation": "offload_cache",
+      "payload_bytes": 1024,
+      "pool_capacity": 0,
+      "iterations": 2000,
+      "mean_us": 1.1682505000862875,
+      "p50_us": 0.4809999154531397,
+      "p95_us": 2.6950001483783126,
+      "p99_us": 4.470000021683518,
+      "max_us": 203.70399943203665,
+      "throughput_mib_s": 835.9187519524885
+    },
+    {
+      "operation": "offload_cache",
+      "payload_bytes": 65536,
+      "pool_capacity": 0,
+      "iterations": 2000,
+      "mean_us": 46.4941775007901,
+      "p50_us": 39.960000322025735,
+      "p95_us": 80.72600030573085,
+      "p99_us": 129.5889996981714,
+      "max_us": 343.67300031590275,
+      "throughput_mib_s": 1344.2543423622863
+    },
+    {
+      "operation": "offload_cache",
+      "payload_bytes": 1048576,
+      "pool_capacity": 0,
+      "iterations": 2000,
+      "mean_us": 1267.4643044874756,
+      "p50_us": 995.768000393582,
+      "p95_us": 2051.5579999482725,
+      "p99_us": 4755.034000481828,
+      "max_us": 70881.65299956017,
+      "throughput_mib_s": 788.9768543851575
+    },
+    {
+      "operation": "prefetch_cache",
+      "payload_bytes": 1024,
+      "pool_capacity": 0,
+      "iterations": 2000,
+      "mean_us": 0.9400274921063101,
+      "p50_us": 0.8429997251369059,
+      "p95_us": 1.1320007615722716,
+      "p99_us": 3.997000021627173,
+      "max_us": 21.88199960073689,
+      "throughput_mib_s": 1038.8658929664134
+    },
+    {
+      "operation": "prefetch_cache",
+      "payload_bytes": 65536,
+      "pool_capacity": 0,
+      "iterations": 2000,
+      "mean_us": 27.461503005724808,
+      "p50_us": 19.810000594588928,
+      "p95_us": 43.770999582193326,
+      "p99_us": 93.10000041296007,
+      "max_us": 7347.771999775432,
+      "throughput_mib_s": 2275.9133025956676
+    },
+    {
+      "operation": "prefetch_cache",
+      "payload_bytes": 1048576,
+      "pool_capacity": 0,
+      "iterations": 2000,
+      "mean_us": 598.0572864950773,
+      "p50_us": 456.76700028707273,
+      "p95_us": 1139.863000389596,
+      "p99_us": 1594.930999999633,
+      "max_us": 100269.25500005746,
+      "throughput_mib_s": 1672.080622678328
+    },
+    {
+      "operation": "offload_cache",
+      "payload_bytes": 1024,
+      "pool_capacity": 256,
+      "iterations": 2000,
+      "mean_us": 0.5952359979346511,
+      "p50_us": 0.5189995135879144,
+      "p95_us": 0.693000401952304,
+      "p99_us": 1.3999997463542968,
+      "max_us": 37.105000046722125,
+      "throughput_mib_s": 1640.630780712986
+    },
+    {
+      "operation": "offload_cache",
+      "payload_bytes": 65536,
+      "pool_capacity": 256,
+      "iterations": 2000,
+      "mean_us": 12.776405502336274,
+      "p50_us": 8.254999556811526,
+      "p95_us": 39.491999814345036,
+      "p99_us": 62.79599983827211,
+      "max_us": 227.9150003232644,
+      "throughput_mib_s": 4891.829708173504
+    },
+    {
+      "operation": "offload_cache",
+      "payload_bytes": 1048576,
+      "pool_capacity": 256,
+      "iterations": 2000,
+      "mean_us": 384.11807100646905,
+      "p50_us": 338.5520003575948,
+      "p95_us": 748.0260001102579,
+      "p99_us": 1042.9599997223704,
+      "max_us": 2943.309999864141,
+      "throughput_mib_s": 2603.3661925349998
+    },
+    {
+      "operation": "prefetch_cache",
+      "payload_bytes": 1024,
+      "pool_capacity": 256,
+      "iterations": 2000,
+      "mean_us": 0.34812800549843814,
+      "p50_us": 0.26699945010477677,
+      "p95_us": 0.8070001058513299,
+      "p99_us": 1.0930007192655466,
+      "max_us": 10.917000508925412,
+      "throughput_mib_s": 2805.182244967021
+    },
+    {
+      "operation": "prefetch_cache",
+      "payload_bytes": 65536,
+      "pool_capacity": 256,
+      "iterations": 2000,
+      "mean_us": 3.240519002702058,
+      "p50_us": 0.2710003172978759,
+      "p95_us": 18.693999663810246,
+      "p99_us": 21.195000044826884,
+      "max_us": 787.4210004956694,
+      "throughput_mib_s": 19287.033943601415
+    },
+    {
+      "operation": "prefetch_cache",
+      "payload_bytes": 1048576,
+      "pool_capacity": 256,
+      "iterations": 2000,
+      "mean_us": 63.20551049293499,
+      "p50_us": 0.2849992597475648,
+      "p95_us": 374.977999854309,
+      "p99_us": 572.042999920086,
+      "max_us": 13974.869999401562,
+      "throughput_mib_s": 15821.40532053417
+    },
+    {
+      "operation": "is_offloaded",
+      "payload_bytes": 1024,
+      "pool_capacity": 0,
+      "iterations": 20000,
+      "mean_us": 0.43175134801458626,
+      "p50_us": 0.3320001269457862,
+      "p95_us": 0.3850000211969018,
+      "p99_us": 1.1860001905006357,
+      "max_us": 190.49099955736892
+    }
+  ],
+  "hash_consistency": {
+    "prompts": 1000,
+    "python_hash_mean_us": 1.4461350001511164,
+    "cpp_offload_mean_us": 0.4507550002017524,
+    "resident_after_offload": 1000,
+    "all_resident": true
+  }
+}

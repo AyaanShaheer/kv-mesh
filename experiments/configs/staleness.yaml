@@ -1,0 +1,36 @@
+# Metadata-staleness scenario (manuscript §5.2, "Heartbeat delay/loss").
+#
+# Varies the delay, jitter and loss rate of the worker heartbeat, and the
+# gateway's staleness window (TTL). The question is how much routing accuracy
+# is lost when the gateway's view of a worker's cache is out of date.
+name: staleness
+description: Heartbeat delay, jitter, loss and TTL sweep
+
+factors:
+  n_workers: [4]
+  capacity: [8]
+  heartbeat_interval: [3.0]
+  ttl: [5.0, 10.0, 20.0]
+  heartbeat_delay: [0.0, 1.0, 3.0]
+  heartbeat_jitter: [0.0, 1.0]
+  heartbeat_drop: [0.0, 0.1, 0.3]
+
+policies: [affinity, roundrobin, oracle]
+
+workloads:
+  zipf:
+    kind: zipf
+    n_keys: 256
+    zipf_s: 1.1
+    target_utilization: 0.5
+
+base:
+  ttl: 10.0
+  host_capacity: 64
+  service_time: 0.005
+
+repetitions: 5
+n_requests: 10000
+
+keep_records:
+  - {n_workers: 4, capacity: 8, heartbeat_interval: 3.0, ttl: 10.0, heartbeat_delay: 0.0, heartbeat_jitter: 0.0, heartbeat_drop: 0.0}

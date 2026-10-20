@@ -125,7 +125,31 @@ python client.py "Write a merge sort algorithm in C++"
 
 Verify the console logs:
 - **Gateway**: Look for `[Gateway] Routing request ...` and `[Router] KV Cache HIT!`.
-- **Worker**: Look for `VRAM HIT`, `VRAM FULL. Evicting hash ... to CPU`, and `Pre-fetching over PCIe`.
+- **Worker**: Look for `VRAM HIT`, `VRAM FULL. Evicting hash ... to CPU`, and `Pre-fetching from host pool`.
+
+> **Note on terminology.** The worker's responses are synthetic and its "VRAM" is a list of fingerprints rather than GPU memory. Please keep the README, the code comments and the paper consistent about what is measured and what is modelled; the distinction is what the manuscript's claims rest on.
+
+---
+
+## 📊 Running the Evaluation
+
+The repository ships a reproducible evaluation harness under `experiments/`. It has three arms: a discrete-event simulator of the control plane, a live-system harness that drives the real gateway and workers over gRPC, and component microbenchmarks.
+
+```bash
+make build       # C++ extension, gateway binary, protobuf stubs
+make test        # Go unit tests (race detector) + pytest suite
+make experiments # all sweeps, the live arm and the microbenchmarks
+make report      # regenerate paper/tables/*.tex and paper/figures/*.pdf
+make paper       # rebuild paper/kv-mesh.pdf
+```
+
+Conventions when adding an experiment:
+
+1. Put the design in a YAML file under `experiments/configs/`. Never hard-code a seed: each repetition must replay a *different* trace, and the seed belongs in the configuration so that it is archived with the results.
+2. Write the raw per-request event stream (`requests.jsonl.gz`) for the runs that back a table. Every run must at least archive its `summary.json`.
+3. Add the table builder and its `emit(...)` call in `experiments/scripts/make_report.py`. Tables and figures are generated; never edit `paper/tables/*.tex` by hand.
+4. Add an invariant test under `experiments/tests/` for anything the results depend on. The cross-language fingerprint test is the model: the Go gateway, the Python worker and the harness must hash identically.
+5. Report a confidence interval and the number of replicates. A mean without an interval is not an acceptable result.
 
 ---
 

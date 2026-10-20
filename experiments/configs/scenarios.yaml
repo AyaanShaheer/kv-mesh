@@ -1,0 +1,36 @@
+# Scenario sweeps: metadata staleness, worker churn and capacity pressure.
+#
+# Each scenario isolates one fault or one dimension of the mesh and is reported
+# as its own table in the manuscript.
+name: scenarios
+description: Staleness, churn and capacity-pressure scenarios
+
+factors:
+  n_workers: [4]
+  capacity: [8]
+  heartbeat_interval: [3.0]
+  ttl: [10.0]
+
+policies: [affinity, roundrobin, leastloaded, oracle]
+
+workloads:
+  exact_repeat:
+    kind: exact_repeat
+    n_keys: 64
+    rate: 200.0
+  zipf:
+    kind: zipf
+    n_keys: 256
+    zipf_s: 1.1
+    rate: 200.0
+
+base:
+  ttl: 10.0
+  host_capacity: 64
+  service_time: 0.05
+
+repetitions: 5
+n_requests: 10000
+
+keep_records:
+  - {n_workers: 4, capacity: 8, heartbeat_interval: 3.0}

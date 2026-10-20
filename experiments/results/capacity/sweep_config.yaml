@@ -1,0 +1,43 @@
+name: capacity
+description: Fast-tier and host-tier capacity sweep
+factors:
+  n_workers:
+  - 4
+  capacity:
+  - 2
+  - 4
+  - 8
+  - 16
+  - 32
+  - 64
+  - 128
+  host_capacity:
+  - 0
+  - 8
+  - 32
+  - 64
+  - 128
+  - 512
+  heartbeat_interval:
+  - 3.0
+  ttl:
+  - 10.0
+policies:
+- affinity
+- roundrobin
+- oracle
+workloads:
+  zipf:
+    kind: zipf
+    n_keys: 256
+    zipf_s: 1.1
+    target_utilization: 0.5
+base:
+  ttl: 10.0
+  service_time: 0.005
+repetitions: 5
+n_requests: 10000
+keep_records:
+- n_workers: 4
+  capacity: 8
+  host_capacity: 32

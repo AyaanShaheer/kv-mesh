@@ -1,0 +1,42 @@
+goos: linux
+goarch: amd64
+pkg: kv-mesh/gateway/router
+cpu: 12th Gen Intel(R) Core(TM) i7-12700H
+BenchmarkSelectAffinityHit/workers=1-4         	  300000	       355.3 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectAffinityHit/workers=2-4         	  300000	       467.9 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectAffinityHit/workers=4-4         	  300000	       407.0 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectAffinityHit/workers=8-4         	  300000	       455.5 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectAffinityHit/workers=16-4        	  300000	       542.6 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectAffinityHit/workers=32-4        	  300000	       715.9 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectAffinityHit/workers=64-4        	  300000	      1006 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectAffinityHit/workers=128-4       	  300000	      1710 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectAffinityMiss/workers=1-4        	  300000	       398.9 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectAffinityMiss/workers=2-4        	  300000	       422.2 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectAffinityMiss/workers=4-4        	  300000	       436.4 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectAffinityMiss/workers=8-4        	  300000	       433.2 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectAffinityMiss/workers=16-4       	  300000	       522.4 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectAffinityMiss/workers=32-4       	  300000	       539.9 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectAffinityMiss/workers=64-4       	  300000	       609.9 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectAffinityMiss/workers=128-4      	  300000	       784.6 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectRoundRobin/workers=1-4          	  300000	       381.0 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectRoundRobin/workers=2-4          	  300000	       378.2 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectRoundRobin/workers=4-4          	  300000	       355.0 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectRoundRobin/workers=8-4          	  300000	       371.4 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectRoundRobin/workers=16-4         	  300000	       388.2 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectRoundRobin/workers=32-4         	  300000	       371.5 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectRoundRobin/workers=64-4         	  300000	       351.6 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectRoundRobin/workers=128-4        	  300000	       404.8 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectLeastLoaded/workers=1-4         	  300000	       375.2 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectLeastLoaded/workers=2-4         	  300000	       393.8 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectLeastLoaded/workers=4-4         	  300000	       403.2 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectLeastLoaded/workers=8-4         	  300000	       459.1 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectLeastLoaded/workers=16-4        	  300000	       630.2 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectLeastLoaded/workers=32-4        	  300000	       581.1 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectLeastLoaded/workers=64-4        	  300000	       792.0 ns/op	      64 B/op	       2 allocs/op
+BenchmarkSelectLeastLoaded/workers=128-4       	  300000	      1150 ns/op	      64 B/op	       2 allocs/op
+BenchmarkHashPrompt-4                          	  300000	       414.3 ns/op	      96 B/op	       2 allocs/op
+BenchmarkUpdateWorkerState/workers=1-4         	  300000	       523.8 ns/op	     252 B/op	       5 allocs/op
+BenchmarkUpdateWorkerState/workers=8-4         	  300000	       517.7 ns/op	     252 B/op	       5 allocs/op
+BenchmarkUpdateWorkerState/workers=64-4        	  300000	       571.4 ns/op	     252 B/op	       5 allocs/op
+PASS
+ok  	kv-mesh/gateway/router	6.051s

@@ -1,0 +1,31 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\caption{Paired bootstrap comparison of each policy against round-robin at the reference configuration. Differences are reported as fractions, so a difference of 0.064 is 6.4 percentage points. A dash in the Cohen's $d$ column means the effect is perfectly separated but its standardised size is undefined because the replicates had zero between-run variance.}
+\label{tab:significance}
+\begin{tabular}{lcccccccccc}
+\toprule
+Workload & Metric & Policy & Baseline & n & Diff & 95\% CI low & 95\% CI high & P(diff>0) & Cohen's $d$ \\
+\midrule
+Exact repeats & true\_hit\_rate & affinity & round-robin & 5 & 0.0000 & 0.0000 & 0.0000 & 0.0000 & -- \\
+Exact repeats & true\_hit\_rate & least-loaded & round-robin & 5 & 0.0000 & 0.0000 & 0.0000 & 0.0000 & -- \\
+Exact repeats & true\_hit\_rate & oracle & round-robin & 5 & 0.0192 & 0.0192 & 0.0192 & 1.0000 & -- \\
+Exact repeats & fast\_tier\_hit\_rate & affinity & round-robin & 5 & 0.1032 & 0.0996 & 0.1074 & 1.0000 & 26.7939 \\
+Exact repeats & fast\_tier\_hit\_rate & least-loaded & round-robin & 5 & -0.0004 & -0.0032 & 0.0026 & 0.3823 & -0.1470 \\
+Exact repeats & fast\_tier\_hit\_rate & oracle & round-robin & 5 & 0.3739 & 0.3711 & 0.3772 & 1.0000 & 131.6995 \\
+Hot set (Zipf) & true\_hit\_rate & affinity & round-robin & 5 & 0.0062 & 0.0035 & 0.0083 & 1.0000 & 2.8627 \\
+Hot set (Zipf) & true\_hit\_rate & least-loaded & round-robin & 5 & 0.0002 & -0.0015 & 0.0020 & 0.5845 & 0.0861 \\
+Hot set (Zipf) & true\_hit\_rate & oracle & round-robin & 5 & 0.0935 & 0.0910 & 0.0956 & 1.0000 & 42.9689 \\
+Hot set (Zipf) & fast\_tier\_hit\_rate & affinity & round-robin & 5 & 0.0642 & 0.0582 & 0.0702 & 1.0000 & 12.1589 \\
+Hot set (Zipf) & fast\_tier\_hit\_rate & least-loaded & round-robin & 5 & -0.0003 & -0.0012 & 0.0005 & 0.2509 & -0.1068 \\
+Hot set (Zipf) & fast\_tier\_hit\_rate & oracle & round-robin & 5 & 0.1565 & 0.1539 & 0.1594 & 1.0000 & 43.1046 \\
+Uniform (low reuse) & true\_hit\_rate & affinity & round-robin & 5 & 0.0019 & 0.0002 & 0.0030 & 0.9929 & 1.4972 \\
+Uniform (low reuse) & true\_hit\_rate & least-loaded & round-robin & 5 & 0.0006 & -0.0008 & 0.0017 & 0.8333 & 0.6490 \\
+Uniform (low reuse) & true\_hit\_rate & oracle & round-robin & 5 & 0.0531 & 0.0518 & 0.0544 & 1.0000 & 27.4562 \\
+Uniform (low reuse) & fast\_tier\_hit\_rate & affinity & round-robin & 5 & 0.0003 & 0.0001 & 0.0004 & 1.0000 & 1.0400 \\
+Uniform (low reuse) & fast\_tier\_hit\_rate & least-loaded & round-robin & 5 & 0.0002 & -0.0002 & 0.0006 & 0.8386 & 0.5072 \\
+Uniform (low reuse) & fast\_tier\_hit\_rate & oracle & round-robin & 5 & 0.0062 & 0.0058 & 0.0067 & 1.0000 & 16.0600 \\
+\bottomrule
+\end{tabular}
+\end{table}

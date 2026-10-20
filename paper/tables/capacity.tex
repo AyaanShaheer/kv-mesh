@@ -1,0 +1,27 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\caption{Effect of the fast-tier capacity on cache locality (4 workers, host tier of 64 entries).}
+\label{tab:capacity}
+\begin{tabular}{lccccc}
+\toprule
+Fast tier & Policy & True hit \% & Fast-tier \% & Host-tier \% \\
+\midrule
+2 & affinity & 87.6 \tiny [87.48, 87.80] & 52.5 \tiny [49.65, 54.60] & 35.1 \tiny [33.17, 37.92] \\
+2 & round-robin & 87.5 \tiny [87.26, 87.70] & 42.4 \tiny [42.14, 42.88] & 45.0 \tiny [44.59, 45.36] \\
+4 & affinity & 87.9 \tiny [87.80, 88.07] & 61.2 \tiny [59.63, 62.70] & 26.8 \tiny [25.22, 28.35] \\
+4 & round-robin & 87.7 \tiny [87.51, 87.95] & 53.4 \tiny [53.06, 53.79] & 34.3 \tiny [33.92, 34.64] \\
+8 & affinity & 88.8 \tiny [88.77, 88.80] & 69.3 \tiny [68.75, 69.88] & 19.5 \tiny [18.89, 20.04] \\
+8 & round-robin & 88.2 \tiny [87.95, 88.42] & 62.9 \tiny [62.72, 63.07] & 25.3 \tiny [25.01, 25.55] \\
+16 & affinity & 90.5 \tiny [90.40, 90.65] & 77.3 \tiny [76.76, 77.93] & 13.2 \tiny [12.70, 13.65] \\
+16 & round-robin & 88.9 \tiny [88.78, 89.13] & 71.0 \tiny [70.77, 71.21] & 17.9 \tiny [17.70, 18.15] \\
+32 & affinity & 92.7 \tiny [92.60, 92.88] & 85.4 \tiny [85.04, 85.74] & 7.3 \tiny [7.11, 7.57] \\
+32 & round-robin & 90.2 \tiny [90.09, 90.38] & 78.1 \tiny [77.90, 78.39] & 12.1 \tiny [11.85, 12.21] \\
+64 & affinity & 95.4 \tiny [95.26, 95.48] & 93.3 \tiny [93.12, 93.49] & 2.1 \tiny [1.93, 2.27] \\
+64 & round-robin & 91.8 \tiny [91.68, 92.00] & 84.8 \tiny [84.53, 85.10] & 7.0 \tiny [6.80, 7.31] \\
+128 & affinity & 96.3 \tiny [96.24, 96.36] & 96.3 \tiny [96.24, 96.36] & 0.0 \tiny [0.00, 0.00] \\
+128 & round-robin & 92.8 \tiny [92.77, 92.90] & 90.7 \tiny [90.64, 90.89] & 2.1 \tiny [2.01, 2.15] \\
+\bottomrule
+\end{tabular}
+\end{table*}

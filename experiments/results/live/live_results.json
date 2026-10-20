@@ -1,0 +1,3746 @@
+[
+  {
+    "config": {
+      "n_workers": 1,
+      "policy": "affinity",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 0,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 549,
+      "client_latency_ms_mean": 20.041915573008737,
+      "client_latency_ms_p95": 23.826914999517612,
+      "worker_request_counts": {
+        "w000": 6000
+      },
+      "duration_s": 20.071052626000892
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 549,
+      "affinity_misses": 451,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 25,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 1.94,
+        "p50": 1,
+        "p95": 5,
+        "p99": 12,
+        "max": 35
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 549,
+      "advertised_hit_rate": 0.549,
+      "true_hits": 874,
+      "true_hit_rate": 0.874,
+      "fast_tier_hits": 652,
+      "host_tier_hits": 222,
+      "misses": 126,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 76,
+      "degraded_affinity_rate": 0.1384335154826958,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 5,
+      "routing_latency_us_p99": 12,
+      "routing_latency_us_max": 35
+    },
+    "wall_clock_s": 27.895641326904297
+  },
+  {
+    "config": {
+      "n_workers": 1,
+      "policy": "affinity",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 1,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 599,
+      "client_latency_ms_mean": 20.03195205596421,
+      "client_latency_ms_p95": 23.8948430014716,
+      "worker_request_counts": {
+        "w000": 6000
+      },
+      "duration_s": 20.061342820998107
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 599,
+      "affinity_misses": 401,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 24,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.26,
+        "p50": 1,
+        "p95": 5,
+        "p99": 11,
+        "max": 171
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 599,
+      "advertised_hit_rate": 0.599,
+      "true_hits": 858,
+      "true_hit_rate": 0.858,
+      "fast_tier_hits": 601,
+      "host_tier_hits": 257,
+      "misses": 142,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 90,
+      "degraded_affinity_rate": 0.15025041736227046,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 5,
+      "routing_latency_us_p99": 11,
+      "routing_latency_us_max": 171
+    },
+    "wall_clock_s": 23.374693632125854
+  },
+  {
+    "config": {
+      "n_workers": 1,
+      "policy": "affinity",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 2,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 683,
+      "client_latency_ms_mean": 19.69410226398759,
+      "client_latency_ms_p95": 23.620869000296807,
+      "worker_request_counts": {
+        "w000": 6000
+      },
+      "duration_s": 19.72108966799715
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 683,
+      "affinity_misses": 317,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 23,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.193,
+        "p50": 1,
+        "p95": 6,
+        "p99": 13,
+        "max": 31
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 683,
+      "advertised_hit_rate": 0.683,
+      "true_hits": 882,
+      "true_hit_rate": 0.882,
+      "fast_tier_hits": 655,
+      "host_tier_hits": 227,
+      "misses": 118,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 86,
+      "degraded_affinity_rate": 0.1259150805270864,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 6,
+      "routing_latency_us_p99": 13,
+      "routing_latency_us_max": 31
+    },
+    "wall_clock_s": 25.40796995162964
+  },
+  {
+    "config": {
+      "n_workers": 1,
+      "policy": "affinity",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 0,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 485,
+      "client_latency_ms_mean": 19.847826727924257,
+      "client_latency_ms_p95": 23.842218000936555,
+      "worker_request_counts": {
+        "w000": 6000
+      },
+      "duration_s": 19.87635866599885
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 485,
+      "affinity_misses": 515,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 10,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.104,
+        "p50": 1,
+        "p95": 6,
+        "p99": 14,
+        "max": 39
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 485,
+      "advertised_hit_rate": 0.485,
+      "true_hits": 874,
+      "true_hit_rate": 0.874,
+      "fast_tier_hits": 652,
+      "host_tier_hits": 222,
+      "misses": 126,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 68,
+      "degraded_affinity_rate": 0.1402061855670103,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 6,
+      "routing_latency_us_p99": 14,
+      "routing_latency_us_max": 39
+    },
+    "wall_clock_s": 28.972896575927734
+  },
+  {
+    "config": {
+      "n_workers": 1,
+      "policy": "affinity",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 1,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 605,
+      "client_latency_ms_mean": 19.88427584298188,
+      "client_latency_ms_p95": 24.11338700039778,
+      "worker_request_counts": {
+        "w000": 6000
+      },
+      "duration_s": 19.913359733000107
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 605,
+      "affinity_misses": 395,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 10,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 1.902,
+        "p50": 1,
+        "p95": 5,
+        "p99": 10,
+        "max": 42
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 605,
+      "advertised_hit_rate": 0.605,
+      "true_hits": 858,
+      "true_hit_rate": 0.858,
+      "fast_tier_hits": 601,
+      "host_tier_hits": 257,
+      "misses": 142,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 82,
+      "degraded_affinity_rate": 0.13553719008264462,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 5,
+      "routing_latency_us_p99": 10,
+      "routing_latency_us_max": 42
+    },
+    "wall_clock_s": 35.828803300857544
+  },
+  {
+    "config": {
+      "n_workers": 1,
+      "policy": "affinity",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 2,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 578,
+      "client_latency_ms_mean": 19.527203491074033,
+      "client_latency_ms_p95": 23.6789510017843,
+      "worker_request_counts": {
+        "w000": 6000
+      },
+      "duration_s": 19.55538326000169
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 578,
+      "affinity_misses": 422,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 10,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 1.971,
+        "p50": 1,
+        "p95": 6,
+        "p99": 11,
+        "max": 21
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 578,
+      "advertised_hit_rate": 0.578,
+      "true_hits": 882,
+      "true_hit_rate": 0.882,
+      "fast_tier_hits": 655,
+      "host_tier_hits": 227,
+      "misses": 118,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 77,
+      "degraded_affinity_rate": 0.13321799307958476,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 6,
+      "routing_latency_us_p99": 11,
+      "routing_latency_us_max": 21
+    },
+    "wall_clock_s": 29.28265404701233
+  },
+  {
+    "config": {
+      "n_workers": 2,
+      "policy": "affinity",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 0,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 733,
+      "client_latency_ms_mean": 20.259358512084873,
+      "client_latency_ms_p95": 26.17898199969204,
+      "worker_request_counts": {
+        "w000": 4446,
+        "w001": 1554
+      },
+      "duration_s": 20.287287530001777
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 733,
+      "affinity_misses": 267,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 50,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.516,
+        "p50": 2,
+        "p95": 7,
+        "p99": 13,
+        "max": 47
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 733,
+      "advertised_hit_rate": 0.733,
+      "true_hits": 843,
+      "true_hit_rate": 0.843,
+      "fast_tier_hits": 710,
+      "host_tier_hits": 133,
+      "misses": 157,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 61,
+      "degraded_affinity_rate": 0.08321964529331514,
+      "routing_latency_us_p50": 2,
+      "routing_latency_us_p95": 7,
+      "routing_latency_us_p99": 13,
+      "routing_latency_us_max": 47
+    },
+    "wall_clock_s": 26.516742944717407
+  },
+  {
+    "config": {
+      "n_workers": 2,
+      "policy": "affinity",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 1,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 702,
+      "client_latency_ms_mean": 20.10871847699309,
+      "client_latency_ms_p95": 24.007997002627235,
+      "worker_request_counts": {
+        "w000": 4548,
+        "w001": 1452
+      },
+      "duration_s": 20.138009785001486
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 702,
+      "affinity_misses": 298,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 50,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.291,
+        "p50": 1,
+        "p95": 7,
+        "p99": 12,
+        "max": 31
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 702,
+      "advertised_hit_rate": 0.702,
+      "true_hits": 837,
+      "true_hit_rate": 0.837,
+      "fast_tier_hits": 656,
+      "host_tier_hits": 181,
+      "misses": 163,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 71,
+      "degraded_affinity_rate": 0.10113960113960115,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 7,
+      "routing_latency_us_p99": 12,
+      "routing_latency_us_max": 31
+    },
+    "wall_clock_s": 25.76716661453247
+  },
+  {
+    "config": {
+      "n_workers": 2,
+      "policy": "affinity",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 2,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 730,
+      "client_latency_ms_mean": 19.318389529016713,
+      "client_latency_ms_p95": 22.482504999061348,
+      "worker_request_counts": {
+        "w000": 4680,
+        "w001": 1320
+      },
+      "duration_s": 19.34448175199941
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 730,
+      "affinity_misses": 270,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 50,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.132,
+        "p50": 1,
+        "p95": 6,
+        "p99": 11,
+        "max": 34
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 730,
+      "advertised_hit_rate": 0.73,
+      "true_hits": 857,
+      "true_hit_rate": 0.857,
+      "fast_tier_hits": 706,
+      "host_tier_hits": 151,
+      "misses": 143,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 54,
+      "degraded_affinity_rate": 0.07397260273972603,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 6,
+      "routing_latency_us_p99": 11,
+      "routing_latency_us_max": 34
+    },
+    "wall_clock_s": 30.46369433403015
+  },
+  {
+    "config": {
+      "n_workers": 2,
+      "policy": "affinity",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 0,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 704,
+      "client_latency_ms_mean": 19.170952045038575,
+      "client_latency_ms_p95": 21.976773998176213,
+      "worker_request_counts": {
+        "w000": 4134,
+        "w001": 1866
+      },
+      "duration_s": 19.197234223000123
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 704,
+      "affinity_misses": 296,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 21,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.176,
+        "p50": 1,
+        "p95": 6,
+        "p99": 13,
+        "max": 49
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 704,
+      "advertised_hit_rate": 0.704,
+      "true_hits": 848,
+      "true_hit_rate": 0.848,
+      "fast_tier_hits": 704,
+      "host_tier_hits": 144,
+      "misses": 152,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 77,
+      "degraded_affinity_rate": 0.109375,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 6,
+      "routing_latency_us_p99": 13,
+      "routing_latency_us_max": 49
+    },
+    "wall_clock_s": 30.525033950805664
+  },
+  {
+    "config": {
+      "n_workers": 2,
+      "policy": "affinity",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 1,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 659,
+      "client_latency_ms_mean": 19.313071163978748,
+      "client_latency_ms_p95": 22.714491999067832,
+      "worker_request_counts": {
+        "w000": 4776,
+        "w001": 1224
+      },
+      "duration_s": 19.340136276998237
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 659,
+      "affinity_misses": 341,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 21,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.335,
+        "p50": 1,
+        "p95": 6,
+        "p99": 13,
+        "max": 102
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 659,
+      "advertised_hit_rate": 0.659,
+      "true_hits": 835,
+      "true_hit_rate": 0.835,
+      "fast_tier_hits": 648,
+      "host_tier_hits": 187,
+      "misses": 165,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 81,
+      "degraded_affinity_rate": 0.12291350531107739,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 6,
+      "routing_latency_us_p99": 13,
+      "routing_latency_us_max": 102
+    },
+    "wall_clock_s": 30.817386627197266
+  },
+  {
+    "config": {
+      "n_workers": 2,
+      "policy": "affinity",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 2,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 725,
+      "client_latency_ms_mean": 19.83727733599153,
+      "client_latency_ms_p95": 23.614249999809545,
+      "worker_request_counts": {
+        "w000": 1260,
+        "w001": 4740
+      },
+      "duration_s": 19.867697296002007
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 725,
+      "affinity_misses": 275,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 21,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.293,
+        "p50": 2,
+        "p95": 7,
+        "p99": 15,
+        "max": 36
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 725,
+      "advertised_hit_rate": 0.725,
+      "true_hits": 856,
+      "true_hit_rate": 0.856,
+      "fast_tier_hits": 697,
+      "host_tier_hits": 159,
+      "misses": 144,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 76,
+      "degraded_affinity_rate": 0.10482758620689656,
+      "routing_latency_us_p50": 2,
+      "routing_latency_us_p95": 7,
+      "routing_latency_us_p99": 15,
+      "routing_latency_us_max": 36
+    },
+    "wall_clock_s": 31.197375059127808
+  },
+  {
+    "config": {
+      "n_workers": 4,
+      "policy": "affinity",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 0,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 785,
+      "client_latency_ms_mean": 19.762619965986232,
+      "client_latency_ms_p95": 23.66864500072552,
+      "worker_request_counts": {
+        "w000": 1194,
+        "w001": 3504,
+        "w002": 606,
+        "w003": 696
+      },
+      "duration_s": 19.792324629997893
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 785,
+      "affinity_misses": 215,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 117,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.807,
+        "p50": 2,
+        "p95": 9,
+        "p99": 17,
+        "max": 29
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 785,
+      "advertised_hit_rate": 0.785,
+      "true_hits": 836,
+      "true_hit_rate": 0.836,
+      "fast_tier_hits": 780,
+      "host_tier_hits": 56,
+      "misses": 164,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 28,
+      "degraded_affinity_rate": 0.035668789808917196,
+      "routing_latency_us_p50": 2,
+      "routing_latency_us_p95": 9,
+      "routing_latency_us_p99": 17,
+      "routing_latency_us_max": 29
+    },
+    "wall_clock_s": 34.623138189315796
+  },
+  {
+    "config": {
+      "n_workers": 4,
+      "policy": "affinity",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 1,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 771,
+      "client_latency_ms_mean": 19.81937909602493,
+      "client_latency_ms_p95": 23.976352000318002,
+      "worker_request_counts": {
+        "w000": 1494,
+        "w001": 918,
+        "w002": 744,
+        "w003": 2844
+      },
+      "duration_s": 19.84925393999947
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 771,
+      "affinity_misses": 229,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 105,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 3.151,
+        "p50": 2,
+        "p95": 8,
+        "p99": 15,
+        "max": 137
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 771,
+      "advertised_hit_rate": 0.771,
+      "true_hits": 809,
+      "true_hit_rate": 0.809,
+      "fast_tier_hits": 744,
+      "host_tier_hits": 65,
+      "misses": 191,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 33,
+      "degraded_affinity_rate": 0.042801556420233464,
+      "routing_latency_us_p50": 2,
+      "routing_latency_us_p95": 8,
+      "routing_latency_us_p99": 15,
+      "routing_latency_us_max": 137
+    },
+    "wall_clock_s": 28.24364137649536
+  },
+  {
+    "config": {
+      "n_workers": 4,
+      "policy": "affinity",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 2,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 789,
+      "client_latency_ms_mean": 19.922076056984224,
+      "client_latency_ms_p95": 23.75950100031332,
+      "worker_request_counts": {
+        "w000": 1038,
+        "w001": 690,
+        "w002": 3750,
+        "w003": 522
+      },
+      "duration_s": 19.950830862999283
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 789,
+      "affinity_misses": 211,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 112,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 3.103,
+        "p50": 2,
+        "p95": 9,
+        "p99": 16,
+        "max": 46
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 789,
+      "advertised_hit_rate": 0.789,
+      "true_hits": 831,
+      "true_hit_rate": 0.831,
+      "fast_tier_hits": 771,
+      "host_tier_hits": 60,
+      "misses": 169,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 28,
+      "degraded_affinity_rate": 0.035487959442332066,
+      "routing_latency_us_p50": 2,
+      "routing_latency_us_p95": 9,
+      "routing_latency_us_p99": 16,
+      "routing_latency_us_max": 46
+    },
+    "wall_clock_s": 33.61968159675598
+  },
+  {
+    "config": {
+      "n_workers": 4,
+      "policy": "affinity",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 0,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 786,
+      "client_latency_ms_mean": 19.64404547898812,
+      "client_latency_ms_p95": 23.215474000608083,
+      "worker_request_counts": {
+        "w000": 3324,
+        "w001": 1626,
+        "w002": 600,
+        "w003": 450
+      },
+      "duration_s": 19.671179321998352
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 786,
+      "affinity_misses": 214,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 44,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.634,
+        "p50": 2,
+        "p95": 7,
+        "p99": 15,
+        "max": 33
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 786,
+      "advertised_hit_rate": 0.786,
+      "true_hits": 831,
+      "true_hit_rate": 0.831,
+      "fast_tier_hits": 758,
+      "host_tier_hits": 73,
+      "misses": 169,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 53,
+      "degraded_affinity_rate": 0.06743002544529263,
+      "routing_latency_us_p50": 2,
+      "routing_latency_us_p95": 7,
+      "routing_latency_us_p99": 15,
+      "routing_latency_us_max": 33
+    },
+    "wall_clock_s": 34.93146634101868
+  },
+  {
+    "config": {
+      "n_workers": 4,
+      "policy": "affinity",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 1,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 767,
+      "client_latency_ms_mean": 19.977828436043637,
+      "client_latency_ms_p95": 24.128199002007023,
+      "worker_request_counts": {
+        "w000": 1146,
+        "w001": 3756,
+        "w002": 486,
+        "w003": 612
+      },
+      "duration_s": 20.00676066500091
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 767,
+      "affinity_misses": 233,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 44,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.579,
+        "p50": 2,
+        "p95": 7,
+        "p99": 15,
+        "max": 21
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 767,
+      "advertised_hit_rate": 0.767,
+      "true_hits": 810,
+      "true_hit_rate": 0.81,
+      "fast_tier_hits": 712,
+      "host_tier_hits": 98,
+      "misses": 190,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 69,
+      "degraded_affinity_rate": 0.08996088657105607,
+      "routing_latency_us_p50": 2,
+      "routing_latency_us_p95": 7,
+      "routing_latency_us_p99": 15,
+      "routing_latency_us_max": 21
+    },
+    "wall_clock_s": 36.89774560928345
+  },
+  {
+    "config": {
+      "n_workers": 4,
+      "policy": "affinity",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 2,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 782,
+      "client_latency_ms_mean": 19.99384808699324,
+      "client_latency_ms_p95": 23.997150998184225,
+      "worker_request_counts": {
+        "w000": 2010,
+        "w001": 690,
+        "w002": 2724,
+        "w003": 576
+      },
+      "duration_s": 20.024644643999636
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 782,
+      "affinity_misses": 218,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 45,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.752,
+        "p50": 2,
+        "p95": 7,
+        "p99": 14,
+        "max": 57
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 782,
+      "advertised_hit_rate": 0.782,
+      "true_hits": 829,
+      "true_hit_rate": 0.829,
+      "fast_tier_hits": 755,
+      "host_tier_hits": 74,
+      "misses": 171,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 51,
+      "degraded_affinity_rate": 0.06521739130434782,
+      "routing_latency_us_p50": 2,
+      "routing_latency_us_p95": 7,
+      "routing_latency_us_p99": 14,
+      "routing_latency_us_max": 57
+    },
+    "wall_clock_s": 42.216469287872314
+  },
+  {
+    "config": {
+      "n_workers": 1,
+      "policy": "roundrobin",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 0,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 19.9160348860496,
+      "client_latency_ms_p95": 24.052226999629056,
+      "worker_request_counts": {
+        "w000": 6000
+      },
+      "duration_s": 19.945711128999392
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 24,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 1.791,
+        "p50": 1,
+        "p95": 4,
+        "p99": 12,
+        "max": 84
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 874,
+      "true_hit_rate": 0.874,
+      "fast_tier_hits": 652,
+      "host_tier_hits": 222,
+      "misses": 126,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 4,
+      "routing_latency_us_p99": 12,
+      "routing_latency_us_max": 84
+    },
+    "wall_clock_s": 30.865301370620728
+  },
+  {
+    "config": {
+      "n_workers": 1,
+      "policy": "roundrobin",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 1,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.167824983953324,
+      "client_latency_ms_p95": 24.074770000879653,
+      "worker_request_counts": {
+        "w000": 6000
+      },
+      "duration_s": 20.196988813000644
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 24,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 1.672,
+        "p50": 1,
+        "p95": 4,
+        "p99": 10,
+        "max": 41
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 858,
+      "true_hit_rate": 0.858,
+      "fast_tier_hits": 601,
+      "host_tier_hits": 257,
+      "misses": 142,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 4,
+      "routing_latency_us_p99": 10,
+      "routing_latency_us_max": 41
+    },
+    "wall_clock_s": 23.831065893173218
+  },
+  {
+    "config": {
+      "n_workers": 1,
+      "policy": "roundrobin",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 2,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 19.695910844002356,
+      "client_latency_ms_p95": 23.658723999687936,
+      "worker_request_counts": {
+        "w000": 6000
+      },
+      "duration_s": 19.724196606999612
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 24,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 1.893,
+        "p50": 1,
+        "p95": 5,
+        "p99": 13,
+        "max": 21
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 882,
+      "true_hit_rate": 0.882,
+      "fast_tier_hits": 655,
+      "host_tier_hits": 227,
+      "misses": 118,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 5,
+      "routing_latency_us_p99": 13,
+      "routing_latency_us_max": 21
+    },
+    "wall_clock_s": 23.663830757141113
+  },
+  {
+    "config": {
+      "n_workers": 1,
+      "policy": "roundrobin",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 0,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 19.139795292030612,
+      "client_latency_ms_p95": 22.319635998428566,
+      "worker_request_counts": {
+        "w000": 6000
+      },
+      "duration_s": 19.166374756998266
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 10,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 1.993,
+        "p50": 1,
+        "p95": 4,
+        "p99": 11,
+        "max": 301
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 874,
+      "true_hit_rate": 0.874,
+      "fast_tier_hits": 652,
+      "host_tier_hits": 222,
+      "misses": 126,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 4,
+      "routing_latency_us_p99": 11,
+      "routing_latency_us_max": 301
+    },
+    "wall_clock_s": 28.560078620910645
+  },
+  {
+    "config": {
+      "n_workers": 1,
+      "policy": "roundrobin",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 1,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 19.261779956053942,
+      "client_latency_ms_p95": 22.13689199925284,
+      "worker_request_counts": {
+        "w000": 6000
+      },
+      "duration_s": 19.287713380999776
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 10,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 1.643,
+        "p50": 1,
+        "p95": 4,
+        "p99": 14,
+        "max": 26
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 858,
+      "true_hit_rate": 0.858,
+      "fast_tier_hits": 601,
+      "host_tier_hits": 257,
+      "misses": 142,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 4,
+      "routing_latency_us_p99": 14,
+      "routing_latency_us_max": 26
+    },
+    "wall_clock_s": 29.1978542804718
+  },
+  {
+    "config": {
+      "n_workers": 1,
+      "policy": "roundrobin",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 2,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 19.803150517018366,
+      "client_latency_ms_p95": 23.933382999530295,
+      "worker_request_counts": {
+        "w000": 6000
+      },
+      "duration_s": 19.831374931000028
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 10,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 1.835,
+        "p50": 1,
+        "p95": 5,
+        "p99": 9,
+        "max": 52
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 882,
+      "true_hit_rate": 0.882,
+      "fast_tier_hits": 655,
+      "host_tier_hits": 227,
+      "misses": 118,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 5,
+      "routing_latency_us_p99": 9,
+      "routing_latency_us_max": 52
+    },
+    "wall_clock_s": 30.186692714691162
+  },
+  {
+    "config": {
+      "n_workers": 2,
+      "policy": "roundrobin",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 0,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.074917001064023,
+      "client_latency_ms_p95": 23.71180699992692,
+      "worker_request_counts": {
+        "w000": 3000,
+        "w001": 3000
+      },
+      "duration_s": 20.10258449400135
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 50,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 1.877,
+        "p50": 1,
+        "p95": 5,
+        "p99": 13,
+        "max": 37
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 838,
+      "true_hit_rate": 0.838,
+      "fast_tier_hits": 650,
+      "host_tier_hits": 188,
+      "misses": 162,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 5,
+      "routing_latency_us_p99": 13,
+      "routing_latency_us_max": 37
+    },
+    "wall_clock_s": 28.960089683532715
+  },
+  {
+    "config": {
+      "n_workers": 2,
+      "policy": "roundrobin",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 1,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.163330000988935,
+      "client_latency_ms_p95": 24.376507997658337,
+      "worker_request_counts": {
+        "w000": 3000,
+        "w001": 3000
+      },
+      "duration_s": 20.19181917899914
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 50,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 1.797,
+        "p50": 1,
+        "p95": 5,
+        "p99": 10,
+        "max": 37
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 830,
+      "true_hit_rate": 0.83,
+      "fast_tier_hits": 605,
+      "host_tier_hits": 225,
+      "misses": 170,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 5,
+      "routing_latency_us_p99": 10,
+      "routing_latency_us_max": 37
+    },
+    "wall_clock_s": 25.514207363128662
+  },
+  {
+    "config": {
+      "n_workers": 2,
+      "policy": "roundrobin",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 2,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.179278879004414,
+      "client_latency_ms_p95": 25.643114000558853,
+      "worker_request_counts": {
+        "w000": 3000,
+        "w001": 3000
+      },
+      "duration_s": 20.213745780001773
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 53,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.045,
+        "p50": 1,
+        "p95": 7,
+        "p99": 12,
+        "max": 89
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 858,
+      "true_hit_rate": 0.858,
+      "fast_tier_hits": 652,
+      "host_tier_hits": 206,
+      "misses": 142,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 7,
+      "routing_latency_us_p99": 12,
+      "routing_latency_us_max": 89
+    },
+    "wall_clock_s": 30.356268644332886
+  },
+  {
+    "config": {
+      "n_workers": 2,
+      "policy": "roundrobin",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 0,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 21.16695598806109,
+      "client_latency_ms_p95": 27.085429999715416,
+      "worker_request_counts": {
+        "w000": 3000,
+        "w001": 3000
+      },
+      "duration_s": 21.203685959000723
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 22,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.339,
+        "p50": 1,
+        "p95": 7,
+        "p99": 13,
+        "max": 75
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 838,
+      "true_hit_rate": 0.838,
+      "fast_tier_hits": 650,
+      "host_tier_hits": 188,
+      "misses": 162,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 7,
+      "routing_latency_us_p99": 13,
+      "routing_latency_us_max": 75
+    },
+    "wall_clock_s": 34.725290060043335
+  },
+  {
+    "config": {
+      "n_workers": 2,
+      "policy": "roundrobin",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 1,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 19.69645893399138,
+      "client_latency_ms_p95": 23.107273002096917,
+      "worker_request_counts": {
+        "w000": 3000,
+        "w001": 3000
+      },
+      "duration_s": 19.724831429000915
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 21,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 1.84,
+        "p50": 1,
+        "p95": 5,
+        "p99": 10,
+        "max": 21
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 830,
+      "true_hit_rate": 0.83,
+      "fast_tier_hits": 605,
+      "host_tier_hits": 225,
+      "misses": 170,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 5,
+      "routing_latency_us_p99": 10,
+      "routing_latency_us_max": 21
+    },
+    "wall_clock_s": 32.49417591094971
+  },
+  {
+    "config": {
+      "n_workers": 2,
+      "policy": "roundrobin",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 2,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 19.519634596996184,
+      "client_latency_ms_p95": 22.76590700057568,
+      "worker_request_counts": {
+        "w000": 3000,
+        "w001": 3000
+      },
+      "duration_s": 19.546329129996593
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 21,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 1.661,
+        "p50": 1,
+        "p95": 4,
+        "p99": 10,
+        "max": 34
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 858,
+      "true_hit_rate": 0.858,
+      "fast_tier_hits": 652,
+      "host_tier_hits": 206,
+      "misses": 142,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 4,
+      "routing_latency_us_p99": 10,
+      "routing_latency_us_max": 34
+    },
+    "wall_clock_s": 31.037725925445557
+  },
+  {
+    "config": {
+      "n_workers": 4,
+      "policy": "roundrobin",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 0,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.098185742961505,
+      "client_latency_ms_p95": 23.971908001840347,
+      "worker_request_counts": {
+        "w000": 1500,
+        "w001": 1500,
+        "w002": 1500,
+        "w003": 1500
+      },
+      "duration_s": 20.128378596000402
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 106,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.486,
+        "p50": 1,
+        "p95": 7,
+        "p99": 22,
+        "max": 44
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 800,
+      "true_hit_rate": 0.8,
+      "fast_tier_hits": 645,
+      "host_tier_hits": 155,
+      "misses": 200,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 7,
+      "routing_latency_us_p99": 22,
+      "routing_latency_us_max": 44
+    },
+    "wall_clock_s": 29.52101182937622
+  },
+  {
+    "config": {
+      "n_workers": 4,
+      "policy": "roundrobin",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 1,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.450129784003366,
+      "client_latency_ms_p95": 25.31364899914479,
+      "worker_request_counts": {
+        "w000": 1500,
+        "w001": 1500,
+        "w002": 1500,
+        "w003": 1500
+      },
+      "duration_s": 20.47846635699898
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 108,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.466,
+        "p50": 1,
+        "p95": 7,
+        "p99": 20,
+        "max": 69
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 783,
+      "true_hit_rate": 0.783,
+      "fast_tier_hits": 603,
+      "host_tier_hits": 180,
+      "misses": 217,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 7,
+      "routing_latency_us_p99": 20,
+      "routing_latency_us_max": 69
+    },
+    "wall_clock_s": 30.533843755722046
+  },
+  {
+    "config": {
+      "n_workers": 4,
+      "policy": "roundrobin",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 2,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.835210748016834,
+      "client_latency_ms_p95": 25.714899002196034,
+      "worker_request_counts": {
+        "w000": 1500,
+        "w001": 1500,
+        "w002": 1500,
+        "w003": 1500
+      },
+      "duration_s": 20.86777075200007
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 116,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.449,
+        "p50": 1,
+        "p95": 7,
+        "p99": 15,
+        "max": 40
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 810,
+      "true_hit_rate": 0.81,
+      "fast_tier_hits": 644,
+      "host_tier_hits": 166,
+      "misses": 190,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 7,
+      "routing_latency_us_p99": 15,
+      "routing_latency_us_max": 40
+    },
+    "wall_clock_s": 37.09644103050232
+  },
+  {
+    "config": {
+      "n_workers": 4,
+      "policy": "roundrobin",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 0,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.281620185018255,
+      "client_latency_ms_p95": 24.244929998531006,
+      "worker_request_counts": {
+        "w000": 1500,
+        "w001": 1500,
+        "w002": 1500,
+        "w003": 1500
+      },
+      "duration_s": 20.31197020900072
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 45,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.1,
+        "p50": 1,
+        "p95": 6,
+        "p99": 14,
+        "max": 73
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 800,
+      "true_hit_rate": 0.8,
+      "fast_tier_hits": 645,
+      "host_tier_hits": 155,
+      "misses": 200,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 6,
+      "routing_latency_us_p99": 14,
+      "routing_latency_us_max": 73
+    },
+    "wall_clock_s": 36.249837160110474
+  },
+  {
+    "config": {
+      "n_workers": 4,
+      "policy": "roundrobin",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 1,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.400010044053488,
+      "client_latency_ms_p95": 24.445103998004925,
+      "worker_request_counts": {
+        "w000": 1500,
+        "w001": 1500,
+        "w002": 1500,
+        "w003": 1500
+      },
+      "duration_s": 20.43098065799859
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 45,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 1.914,
+        "p50": 1,
+        "p95": 5,
+        "p99": 12,
+        "max": 36
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 783,
+      "true_hit_rate": 0.783,
+      "fast_tier_hits": 603,
+      "host_tier_hits": 180,
+      "misses": 217,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 5,
+      "routing_latency_us_p99": 12,
+      "routing_latency_us_max": 36
+    },
+    "wall_clock_s": 39.04533910751343
+  },
+  {
+    "config": {
+      "n_workers": 4,
+      "policy": "roundrobin",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 2,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.478928715976508,
+      "client_latency_ms_p95": 24.720714001887245,
+      "worker_request_counts": {
+        "w000": 1500,
+        "w001": 1500,
+        "w002": 1500,
+        "w003": 1500
+      },
+      "duration_s": 20.51149219999934
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 48,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.302,
+        "p50": 1,
+        "p95": 7,
+        "p99": 16,
+        "max": 62
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 810,
+      "true_hit_rate": 0.81,
+      "fast_tier_hits": 644,
+      "host_tier_hits": 166,
+      "misses": 190,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 7,
+      "routing_latency_us_p99": 16,
+      "routing_latency_us_max": 62
+    },
+    "wall_clock_s": 42.64449691772461
+  },
+  {
+    "config": {
+      "n_workers": 1,
+      "policy": "leastloaded",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 0,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.35212387393767,
+      "client_latency_ms_p95": 25.081426996621303,
+      "worker_request_counts": {
+        "w000": 6000
+      },
+      "duration_s": 20.383574850002333
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 24,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 1.856,
+        "p50": 1,
+        "p95": 6,
+        "p99": 11,
+        "max": 21
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 874,
+      "true_hit_rate": 0.874,
+      "fast_tier_hits": 652,
+      "host_tier_hits": 222,
+      "misses": 126,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 6,
+      "routing_latency_us_p99": 11,
+      "routing_latency_us_max": 21
+    },
+    "wall_clock_s": 24.22236466407776
+  },
+  {
+    "config": {
+      "n_workers": 1,
+      "policy": "leastloaded",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 1,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.769298863040603,
+      "client_latency_ms_p95": 25.312931000371464,
+      "worker_request_counts": {
+        "w000": 6000
+      },
+      "duration_s": 20.802366800999152
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 25,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 1.78,
+        "p50": 1,
+        "p95": 5,
+        "p99": 12,
+        "max": 30
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 858,
+      "true_hit_rate": 0.858,
+      "fast_tier_hits": 601,
+      "host_tier_hits": 257,
+      "misses": 142,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 5,
+      "routing_latency_us_p99": 12,
+      "routing_latency_us_max": 30
+    },
+    "wall_clock_s": 25.1155788898468
+  },
+  {
+    "config": {
+      "n_workers": 1,
+      "policy": "leastloaded",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 2,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.503876520120684,
+      "client_latency_ms_p95": 24.95896600157721,
+      "worker_request_counts": {
+        "w000": 6000
+      },
+      "duration_s": 20.53692780399797
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 24,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 1.965,
+        "p50": 1,
+        "p95": 6,
+        "p99": 11,
+        "max": 48
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 882,
+      "true_hit_rate": 0.882,
+      "fast_tier_hits": 655,
+      "host_tier_hits": 227,
+      "misses": 118,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 6,
+      "routing_latency_us_p99": 11,
+      "routing_latency_us_max": 48
+    },
+    "wall_clock_s": 24.637306690216064
+  },
+  {
+    "config": {
+      "n_workers": 1,
+      "policy": "leastloaded",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 0,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.42301796601896,
+      "client_latency_ms_p95": 24.905909998778952,
+      "worker_request_counts": {
+        "w000": 6000
+      },
+      "duration_s": 20.454101143001026
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 10,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 1.816,
+        "p50": 1,
+        "p95": 5,
+        "p99": 9,
+        "max": 72
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 874,
+      "true_hit_rate": 0.874,
+      "fast_tier_hits": 652,
+      "host_tier_hits": 222,
+      "misses": 126,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 5,
+      "routing_latency_us_p99": 9,
+      "routing_latency_us_max": 72
+    },
+    "wall_clock_s": 34.784738302230835
+  },
+  {
+    "config": {
+      "n_workers": 1,
+      "policy": "leastloaded",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 1,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.73937705901335,
+      "client_latency_ms_p95": 25.336976003018208,
+      "worker_request_counts": {
+        "w000": 6000
+      },
+      "duration_s": 20.772333318000165
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 11,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 1.617,
+        "p50": 1,
+        "p95": 5,
+        "p99": 10,
+        "max": 38
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 858,
+      "true_hit_rate": 0.858,
+      "fast_tier_hits": 601,
+      "host_tier_hits": 257,
+      "misses": 142,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 5,
+      "routing_latency_us_p99": 10,
+      "routing_latency_us_max": 38
+    },
+    "wall_clock_s": 31.00687074661255
+  },
+  {
+    "config": {
+      "n_workers": 1,
+      "policy": "leastloaded",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 2,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.121231493962114,
+      "client_latency_ms_p95": 24.578062002547085,
+      "worker_request_counts": {
+        "w000": 6000
+      },
+      "duration_s": 20.15124966499934
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 10,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 1.646,
+        "p50": 1,
+        "p95": 4,
+        "p99": 12,
+        "max": 47
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 882,
+      "true_hit_rate": 0.882,
+      "fast_tier_hits": 655,
+      "host_tier_hits": 227,
+      "misses": 118,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 4,
+      "routing_latency_us_p99": 12,
+      "routing_latency_us_max": 47
+    },
+    "wall_clock_s": 33.934136152267456
+  },
+  {
+    "config": {
+      "n_workers": 2,
+      "policy": "leastloaded",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 0,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.451985093022813,
+      "client_latency_ms_p95": 25.39365000120597,
+      "worker_request_counts": {
+        "w000": 4086,
+        "w001": 1914
+      },
+      "duration_s": 20.48419692599782
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 50,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.491,
+        "p50": 2,
+        "p95": 7,
+        "p99": 14,
+        "max": 46
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 842,
+      "true_hit_rate": 0.842,
+      "fast_tier_hits": 655,
+      "host_tier_hits": 187,
+      "misses": 158,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 2,
+      "routing_latency_us_p95": 7,
+      "routing_latency_us_p99": 14,
+      "routing_latency_us_max": 46
+    },
+    "wall_clock_s": 26.048060417175293
+  },
+  {
+    "config": {
+      "n_workers": 2,
+      "policy": "leastloaded",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 1,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.01492046304702,
+      "client_latency_ms_p95": 24.593165999249322,
+      "worker_request_counts": {
+        "w000": 3912,
+        "w001": 2088
+      },
+      "duration_s": 20.045311211000808
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 50,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.577,
+        "p50": 2,
+        "p95": 7,
+        "p99": 16,
+        "max": 44
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 830,
+      "true_hit_rate": 0.83,
+      "fast_tier_hits": 600,
+      "host_tier_hits": 230,
+      "misses": 170,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 2,
+      "routing_latency_us_p95": 7,
+      "routing_latency_us_p99": 16,
+      "routing_latency_us_max": 44
+    },
+    "wall_clock_s": 26.207010746002197
+  },
+  {
+    "config": {
+      "n_workers": 2,
+      "policy": "leastloaded",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 2,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 19.907016883022152,
+      "client_latency_ms_p95": 24.561509999330156,
+      "worker_request_counts": {
+        "w000": 4212,
+        "w001": 1788
+      },
+      "duration_s": 19.936404528998537
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 50,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.52,
+        "p50": 2,
+        "p95": 8,
+        "p99": 16,
+        "max": 75
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 859,
+      "true_hit_rate": 0.859,
+      "fast_tier_hits": 651,
+      "host_tier_hits": 208,
+      "misses": 141,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 2,
+      "routing_latency_us_p95": 8,
+      "routing_latency_us_p99": 16,
+      "routing_latency_us_max": 75
+    },
+    "wall_clock_s": 26.431543111801147
+  },
+  {
+    "config": {
+      "n_workers": 2,
+      "policy": "leastloaded",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 0,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.807968626922957,
+      "client_latency_ms_p95": 24.946386998635717,
+      "worker_request_counts": {
+        "w000": 3750,
+        "w001": 2250
+      },
+      "duration_s": 20.83780587000001
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 22,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 4.453,
+        "p50": 1,
+        "p95": 7,
+        "p99": 16,
+        "max": 1923
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 849,
+      "true_hit_rate": 0.849,
+      "fast_tier_hits": 654,
+      "host_tier_hits": 195,
+      "misses": 151,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 7,
+      "routing_latency_us_p99": 16,
+      "routing_latency_us_max": 1923
+    },
+    "wall_clock_s": 32.82082533836365
+  },
+  {
+    "config": {
+      "n_workers": 2,
+      "policy": "leastloaded",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 1,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.952699147055682,
+      "client_latency_ms_p95": 25.59759500218206,
+      "worker_request_counts": {
+        "w000": 4266,
+        "w001": 1734
+      },
+      "duration_s": 20.985820523001166
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 22,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.793,
+        "p50": 2,
+        "p95": 7,
+        "p99": 19,
+        "max": 94
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 829,
+      "true_hit_rate": 0.829,
+      "fast_tier_hits": 603,
+      "host_tier_hits": 226,
+      "misses": 171,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 2,
+      "routing_latency_us_p95": 7,
+      "routing_latency_us_p99": 19,
+      "routing_latency_us_max": 94
+    },
+    "wall_clock_s": 36.2930212020874
+  },
+  {
+    "config": {
+      "n_workers": 2,
+      "policy": "leastloaded",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 2,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 19.798939804004476,
+      "client_latency_ms_p95": 23.308292002184317,
+      "worker_request_counts": {
+        "w000": 3240,
+        "w001": 2760
+      },
+      "duration_s": 19.829403070001717
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 21,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.38,
+        "p50": 1,
+        "p95": 7,
+        "p99": 14,
+        "max": 55
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 850,
+      "true_hit_rate": 0.85,
+      "fast_tier_hits": 654,
+      "host_tier_hits": 196,
+      "misses": 150,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 1,
+      "routing_latency_us_p95": 7,
+      "routing_latency_us_p99": 14,
+      "routing_latency_us_max": 55
+    },
+    "wall_clock_s": 32.35320591926575
+  },
+  {
+    "config": {
+      "n_workers": 4,
+      "policy": "leastloaded",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 0,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 21.43412540400095,
+      "client_latency_ms_p95": 26.969475999067072,
+      "worker_request_counts": {
+        "w000": 3048,
+        "w001": 2262,
+        "w002": 444,
+        "w003": 246
+      },
+      "duration_s": 21.466494361000514
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 115,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 3.631,
+        "p50": 2,
+        "p95": 10,
+        "p99": 17,
+        "max": 181
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 829,
+      "true_hit_rate": 0.829,
+      "fast_tier_hits": 647,
+      "host_tier_hits": 182,
+      "misses": 171,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 2,
+      "routing_latency_us_p95": 10,
+      "routing_latency_us_p99": 17,
+      "routing_latency_us_max": 181
+    },
+    "wall_clock_s": 35.69283723831177
+  },
+  {
+    "config": {
+      "n_workers": 4,
+      "policy": "leastloaded",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 1,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.223216913051147,
+      "client_latency_ms_p95": 25.03998199972557,
+      "worker_request_counts": {
+        "w000": 3588,
+        "w001": 1098,
+        "w002": 726,
+        "w003": 588
+      },
+      "duration_s": 20.251533996000944
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 120,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 2.979,
+        "p50": 2,
+        "p95": 10,
+        "p99": 21,
+        "max": 48
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 790,
+      "true_hit_rate": 0.79,
+      "fast_tier_hits": 600,
+      "host_tier_hits": 190,
+      "misses": 210,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 2,
+      "routing_latency_us_p95": 10,
+      "routing_latency_us_p99": 21,
+      "routing_latency_us_max": 48
+    },
+    "wall_clock_s": 35.03043341636658
+  },
+  {
+    "config": {
+      "n_workers": 4,
+      "policy": "leastloaded",
+      "ttl": 10.0,
+      "heartbeat_interval": 1.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 2,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.933005773928016,
+      "client_latency_ms_p95": 25.853294999251375,
+      "worker_request_counts": {
+        "w000": 3318,
+        "w001": 2124,
+        "w002": 306,
+        "w003": 252
+      },
+      "duration_s": 20.968033360000845
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 110,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 3.524,
+        "p50": 2,
+        "p95": 10,
+        "p99": 18,
+        "max": 78
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 832,
+      "true_hit_rate": 0.832,
+      "fast_tier_hits": 642,
+      "host_tier_hits": 190,
+      "misses": 168,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 2,
+      "routing_latency_us_p95": 10,
+      "routing_latency_us_p99": 18,
+      "routing_latency_us_max": 78
+    },
+    "wall_clock_s": 35.02297878265381
+  },
+  {
+    "config": {
+      "n_workers": 4,
+      "policy": "leastloaded",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 0,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 21.165524903033656,
+      "client_latency_ms_p95": 26.936471000226447,
+      "worker_request_counts": {
+        "w000": 2664,
+        "w001": 1848,
+        "w002": 942,
+        "w003": 546
+      },
+      "duration_s": 21.199372979001055
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 47,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 3.176,
+        "p50": 2,
+        "p95": 10,
+        "p99": 20,
+        "max": 49
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 815,
+      "true_hit_rate": 0.815,
+      "fast_tier_hits": 651,
+      "host_tier_hits": 164,
+      "misses": 185,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 2,
+      "routing_latency_us_p95": 10,
+      "routing_latency_us_p99": 20,
+      "routing_latency_us_max": 49
+    },
+    "wall_clock_s": 35.01020669937134
+  },
+  {
+    "config": {
+      "n_workers": 4,
+      "policy": "leastloaded",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 1,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.990805801957322,
+      "client_latency_ms_p95": 25.305240000307094,
+      "worker_request_counts": {
+        "w000": 3282,
+        "w001": 1542,
+        "w002": 672,
+        "w003": 504
+      },
+      "duration_s": 21.027844860000187
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 50,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 3.835,
+        "p50": 2,
+        "p95": 11,
+        "p99": 28,
+        "max": 89
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 795,
+      "true_hit_rate": 0.795,
+      "fast_tier_hits": 603,
+      "host_tier_hits": 192,
+      "misses": 205,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 2,
+      "routing_latency_us_p95": 11,
+      "routing_latency_us_p99": 28,
+      "routing_latency_us_max": 89
+    },
+    "wall_clock_s": 41.04601788520813
+  },
+  {
+    "config": {
+      "n_workers": 4,
+      "policy": "leastloaded",
+      "ttl": 10.0,
+      "heartbeat_interval": 3.0,
+      "capacity": 8,
+      "host_capacity": 64,
+      "token_delay": 0.002,
+      "n_requests": 1000,
+      "request_rate": 200.0,
+      "workload_kind": "zipf",
+      "n_keys": 256,
+      "zipf_s": 1.1,
+      "seed": 2,
+      "gateway_log": "",
+      "metrics_port": 0
+    },
+    "client": {
+      "requests_sent": 1000,
+      "failures": 0,
+      "advertised_hits_reported": 0,
+      "client_latency_ms_mean": 20.87641695795537,
+      "client_latency_ms_p95": 25.87714000037522,
+      "worker_request_counts": {
+        "w000": 2232,
+        "w001": 2298,
+        "w002": 774,
+        "w003": 696
+      },
+      "duration_s": 20.91037520900136
+    },
+    "gateway_metrics": {
+      "requests_total": 1000,
+      "affinity_hits": 0,
+      "affinity_misses": 1000,
+      "routing_errors": 0,
+      "worker_errors": 0,
+      "stale_heartbeats_rejected": 0,
+      "heartbeats_accepted": 47,
+      "routing_latency_us": {
+        "count": 1000,
+        "mean": 3.184,
+        "p50": 2,
+        "p95": 10,
+        "p99": 16,
+        "max": 56
+      }
+    },
+    "analysis": {
+      "requests": 1000,
+      "errors": 0,
+      "matched_records": 1000,
+      "advertised_hits": 0,
+      "advertised_hit_rate": 0.0,
+      "true_hits": 811,
+      "true_hit_rate": 0.811,
+      "fast_tier_hits": 644,
+      "host_tier_hits": 167,
+      "misses": 189,
+      "stale_affinity": 0,
+      "stale_affinity_rate": 0.0,
+      "degraded_affinity": 0,
+      "degraded_affinity_rate": 0.0,
+      "routing_latency_us_p50": 2,
+      "routing_latency_us_p95": 10,
+      "routing_latency_us_p99": 16,
+      "routing_latency_us_max": 56
+    },
+    "wall_clock_s": 42.64201521873474
+  }
+]

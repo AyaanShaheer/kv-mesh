@@ -1,0 +1,14 @@
+{
+  "python_version": "3.12.3",
+  "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "processor": "x86_64",
+  "cpu_count": 4,
+  "numpy": "2.3.5",
+  "grpc": "1.84.0",
+  "pybind11": "3.1.0",
+  "go_version": "go version go1.22.2 linux/amd64",
+  "git_commit": "7f191b4cdbf8a95eb38c15821203071c7b8d03af",
+  "cpu_model": "12th Gen Intel(R) Core(TM) i7-12700H",
+  "mem_total_kb": 6073208
+}

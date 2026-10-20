@@ -1,0 +1,53 @@
+# Saturation scenario (manuscript §7.2, "when affinity may not help").
+#
+# Varies the offered load per worker. Affinity can only pay off while the
+# queueing delay of a busy cache-holding worker stays below the cost of the
+# recomputation it avoids; this sweep locates that crossover empirically
+# within the simulator's cost model.
+name: saturation
+description: Offered-load sweep at fixed worker count
+
+factors:
+  n_workers: [4]
+  capacity: [8]
+  heartbeat_interval: [3.0]
+  ttl: [10.0]
+
+policies: [affinity, roundrobin, leastloaded, oracle]
+
+workloads:
+  low_load:
+    kind: zipf
+    n_keys: 256
+    zipf_s: 1.1
+    target_utilization: 0.25
+  medium_load:
+    kind: zipf
+    n_keys: 256
+    zipf_s: 1.1
+    target_utilization: 0.5
+  high_load:
+    kind: zipf
+    n_keys: 256
+    zipf_s: 1.1
+    target_utilization: 0.75
+  saturated_load:
+    kind: zipf
+    n_keys: 256
+    zipf_s: 1.1
+    target_utilization: 0.9
+  overloaded_load:
+    kind: zipf
+    n_keys: 256
+    zipf_s: 1.1
+    target_utilization: 1.05
+
+base:
+  ttl: 10.0
+  host_capacity: 64
+  service_time: 0.005
+
+repetitions: 5
+n_requests: 10000
+
+keep_records: []

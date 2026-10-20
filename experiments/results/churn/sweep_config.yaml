@@ -1,0 +1,40 @@
+name: churn
+description: Worker stop/restart churn sweep
+factors:
+  n_workers:
+  - 4
+  - 8
+  capacity:
+  - 8
+  heartbeat_interval:
+  - 3.0
+  ttl:
+  - 10.0
+  churn_interval:
+  - 5.0
+  - 15.0
+  - 30.0
+  churn_downtime:
+  - 0.0
+  - 5.0
+policies:
+- affinity
+- roundrobin
+- leastloaded
+- oracle
+workloads:
+  zipf:
+    kind: zipf
+    n_keys: 256
+    zipf_s: 1.1
+    target_utilization: 0.5
+base:
+  ttl: 10.0
+  host_capacity: 64
+  service_time: 0.005
+repetitions: 5
+n_requests: 10000
+keep_records:
+- n_workers: 4
+  churn_interval: 15.0
+  churn_downtime: 5.0

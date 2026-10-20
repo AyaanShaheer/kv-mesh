@@ -1,0 +1,48 @@
+name: main-sweep
+description: Policy x workload x worker-count x capacity x heartbeat-interval sweep
+factors:
+  n_workers:
+  - 1
+  - 2
+  - 4
+  - 8
+  capacity:
+  - 2
+  - 8
+  - 32
+  - 128
+  heartbeat_interval:
+  - 1.0
+  - 3.0
+  - 5.0
+  ttl:
+  - 10.0
+policies:
+- affinity
+- roundrobin
+- leastloaded
+- oracle
+workloads:
+  exact_repeat:
+    kind: exact_repeat
+    n_keys: 64
+    target_utilization: 0.5
+  zipf:
+    kind: zipf
+    n_keys: 256
+    zipf_s: 1.1
+    target_utilization: 0.5
+  uniform:
+    kind: uniform
+    n_keys: 4096
+    target_utilization: 0.5
+base:
+  ttl: 10.0
+  host_capacity: 64
+  service_time: 0.005
+repetitions: 5
+n_requests: 10000
+keep_records:
+- n_workers: 4
+  capacity: 8
+  heartbeat_interval: 3.0

@@ -29,6 +29,18 @@ message GenerateRequest {
 message GenerateResponse {
     string text = 1;
     bool is_finished = 2;
+
+    // --- Experimental instrumentation (added for the manuscript evaluation) ---
+    // Identity of the worker that actually executed the request. Used to
+    // attribute requests to workers when auditing routing decisions.
+    string worker_id = 3;
+    // Ground-truth cache outcome observed by the worker at execution time:
+    // "vram_hit" | "host_hit" | "miss".
+    string cache_status = 4;
+    // Whether the gateway believed, at routing time, that the selected worker
+    // advertised the request fingerprint. Allows separating the router's
+    // advertised-hit rate from the true cache-hit rate.
+    bool advertised_hit = 5;
 }
 
 message HeartbeatRequest {
@@ -36,9 +48,27 @@ message HeartbeatRequest {
     string grpc_address = 2;       // How the gateway can reach this worker
     float vram_utilization = 3;    // e.g., 0.85 for 85% full
     // For Phase 2: We will send hashed prefixes of what currently lives in this worker's KV Cache
-    repeated uint64 cached_prefixes = 4; 
+    repeated uint64 cached_prefixes = 4;
+
+    // --- Experimental instrumentation (added for the manuscript evaluation) ---
+    // Monotonically increasing counter, per worker instance. Lets the gateway
+    // discard out-of-order or duplicated heartbeat updates.
+    uint64 heartbeat_seq = 5;
+    // Unique per process start. A restarted worker keeps its logical id but
+    // presents a new instance id, so the gateway can safely reset its
+    // sequence-number expectations instead of freezing the worker out.
+    string instance_id = 6;
+    // Fingerprints resident in the host-tier (offloaded) pool. The fast tier
+    // is advertised separately through cached_prefixes.
+    repeated uint64 offloaded_prefixes = 7;
+    // Number of in-flight requests currently being served by this worker.
+    int32 queue_depth = 8;
+    // Approximate bytes of KV state resident in the fast tier.
+    uint64 cache_bytes = 9;
 }
 
 message HeartbeatAck {
     bool success = 1;
+    // False when the gateway rejected the update as stale or out-of-order.
+    bool accepted = 2;
 }

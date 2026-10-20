@@ -1,0 +1,23 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\caption{Effect of the host-tier (byte pool) capacity on recoverability of evicted prefixes (4 workers, fast tier of 8 entries).}
+\label{tab:host-capacity}
+\begin{tabular}{lccccc}
+\toprule
+Host tier & Policy & True hit \% & Fast-tier \% & Host-tier \% \\
+\midrule
+unbounded & affinity & 92.8 \tiny [92.80, 92.89] & 69.3 \tiny [68.75, 69.88] & 23.5 \tiny [22.96, 24.10] \\
+unbounded & round-robin & 92.8 \tiny [92.77, 92.90] & 62.9 \tiny [62.72, 63.07] & 29.9 \tiny [29.74, 30.09] \\
+8 & affinity & 79.8 \tiny [79.47, 80.01] & 69.3 \tiny [68.75, 69.88] & 10.4 \tiny [10.12, 10.74] \\
+8 & round-robin & 75.0 \tiny [74.70, 75.24] & 62.9 \tiny [62.72, 63.07] & 12.1 \tiny [11.89, 12.28] \\
+32 & affinity & 85.7 \tiny [85.61, 85.83] & 69.3 \tiny [68.75, 69.88] & 16.4 \tiny [15.93, 16.86] \\
+32 & round-robin & 83.3 \tiny [83.02, 83.57] & 62.9 \tiny [62.72, 63.07] & 20.4 \tiny [20.23, 20.63] \\
+128 & affinity & 92.2 \tiny [92.15, 92.29] & 69.3 \tiny [68.75, 69.88] & 22.9 \tiny [22.29, 23.50] \\
+128 & round-robin & 92.1 \tiny [92.04, 92.25] & 62.9 \tiny [62.72, 63.07] & 29.2 \tiny [29.00, 29.43] \\
+512 & affinity & 92.8 \tiny [92.80, 92.89] & 69.3 \tiny [68.75, 69.88] & 23.5 \tiny [22.96, 24.10] \\
+512 & round-robin & 92.8 \tiny [92.77, 92.90] & 62.9 \tiny [62.72, 63.07] & 29.9 \tiny [29.74, 30.09] \\
+\bottomrule
+\end{tabular}
+\end{table*}

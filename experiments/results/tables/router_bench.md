@@ -1,0 +1,40 @@
+### Gateway routing-decision microbenchmark
+
+| Benchmark | Workers | ns/op | B/op | allocs/op |
+|---|---|---|---|---|
+| BenchmarkSelectAffinityHit | 1 | 355 | 64 | 2 |
+| BenchmarkSelectAffinityHit | 2 | 468 | 64 | 2 |
+| BenchmarkSelectAffinityHit | 4 | 407 | 64 | 2 |
+| BenchmarkSelectAffinityHit | 8 | 456 | 64 | 2 |
+| BenchmarkSelectAffinityHit | 16 | 543 | 64 | 2 |
+| BenchmarkSelectAffinityHit | 32 | 716 | 64 | 2 |
+| BenchmarkSelectAffinityHit | 64 | 1006 | 64 | 2 |
+| BenchmarkSelectAffinityHit | 128 | 1710 | 64 | 2 |
+| BenchmarkSelectAffinityMiss | 1 | 399 | 64 | 2 |
+| BenchmarkSelectAffinityMiss | 2 | 422 | 64 | 2 |
+| BenchmarkSelectAffinityMiss | 4 | 436 | 64 | 2 |
+| BenchmarkSelectAffinityMiss | 8 | 433 | 64 | 2 |
+| BenchmarkSelectAffinityMiss | 16 | 522 | 64 | 2 |
+| BenchmarkSelectAffinityMiss | 32 | 540 | 64 | 2 |
+| BenchmarkSelectAffinityMiss | 64 | 610 | 64 | 2 |
+| BenchmarkSelectAffinityMiss | 128 | 785 | 64 | 2 |
+| BenchmarkSelectRoundRobin | 1 | 381 | 64 | 2 |
+| BenchmarkSelectRoundRobin | 2 | 378 | 64 | 2 |
+| BenchmarkSelectRoundRobin | 4 | 355 | 64 | 2 |
+| BenchmarkSelectRoundRobin | 8 | 371 | 64 | 2 |
+| BenchmarkSelectRoundRobin | 16 | 388 | 64 | 2 |
+| BenchmarkSelectRoundRobin | 32 | 372 | 64 | 2 |
+| BenchmarkSelectRoundRobin | 64 | 352 | 64 | 2 |
+| BenchmarkSelectRoundRobin | 128 | 405 | 64 | 2 |
+| BenchmarkSelectLeastLoaded | 1 | 375 | 64 | 2 |
+| BenchmarkSelectLeastLoaded | 2 | 394 | 64 | 2 |
+| BenchmarkSelectLeastLoaded | 4 | 403 | 64 | 2 |
+| BenchmarkSelectLeastLoaded | 8 | 459 | 64 | 2 |
+| BenchmarkSelectLeastLoaded | 16 | 630 | 64 | 2 |
+| BenchmarkSelectLeastLoaded | 32 | 581 | 64 | 2 |
+| BenchmarkSelectLeastLoaded | 64 | 792 | 64 | 2 |
+| BenchmarkSelectLeastLoaded | 128 | 1150 | 64 | 2 |
+| BenchmarkHashPrompt | - | 414 | 96 | 2 |
+| BenchmarkUpdateWorkerState | 1 | 524 | 252 | 5 |
+| BenchmarkUpdateWorkerState | 8 | 518 | 252 | 5 |
+| BenchmarkUpdateWorkerState | 64 | 571 | 252 | 5 |

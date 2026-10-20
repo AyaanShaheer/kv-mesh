@@ -91,9 +91,20 @@ func (x *GenerateRequest) GetRequestId() string {
 }
 
 type GenerateResponse struct {
-	state         protoimpl.MessageState `protogen:"open.v1"`
-	Text          string                 `protobuf:"bytes,1,opt,name=text,proto3" json:"text,omitempty"`
-	IsFinished    bool                   `protobuf:"varint,2,opt,name=is_finished,json=isFinished,proto3" json:"is_finished,omitempty"`
+	state      protoimpl.MessageState `protogen:"open.v1"`
+	Text       string                 `protobuf:"bytes,1,opt,name=text,proto3" json:"text,omitempty"`
+	IsFinished bool                   `protobuf:"varint,2,opt,name=is_finished,json=isFinished,proto3" json:"is_finished,omitempty"`
+	// --- Experimental instrumentation (added for the manuscript evaluation) ---
+	// Identity of the worker that actually executed the request. Used to
+	// attribute requests to workers when auditing routing decisions.
+	WorkerId string `protobuf:"bytes,3,opt,name=worker_id,json=workerId,proto3" json:"worker_id,omitempty"`
+	// Ground-truth cache outcome observed by the worker at execution time:
+	// "vram_hit" | "host_hit" | "miss".
+	CacheStatus string `protobuf:"bytes,4,opt,name=cache_status,json=cacheStatus,proto3" json:"cache_status,omitempty"`
+	// Whether the gateway believed, at routing time, that the selected worker
+	// advertised the request fingerprint. Allows separating the router's
+	// advertised-hit rate from the true cache-hit rate.
+	AdvertisedHit bool `protobuf:"varint,5,opt,name=advertised_hit,json=advertisedHit,proto3" json:"advertised_hit,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -142,6 +153,27 @@ func (x *GenerateResponse) GetIsFinished() bool {
 	return false
 }
 
+func (x *GenerateResponse) GetWorkerId() string {
+	if x != nil {
+		return x.WorkerId
+	}
+	return ""
+}
+
+func (x *GenerateResponse) GetCacheStatus() string {
+	if x != nil {
+		return x.CacheStatus
+	}
+	return ""
+}
+
+func (x *GenerateResponse) GetAdvertisedHit() bool {
+	if x != nil {
+		return x.AdvertisedHit
+	}
+	return false
+}
+
 type HeartbeatRequest struct {
 	state           protoimpl.MessageState `protogen:"open.v1"`
 	WorkerId        string                 `protobuf:"bytes,1,opt,name=worker_id,json=workerId,proto3" json:"worker_id,omitempty"`
@@ -149,8 +181,23 @@ type HeartbeatRequest struct {
 	VramUtilization float32                `protobuf:"fixed32,3,opt,name=vram_utilization,json=vramUtilization,proto3" json:"vram_utilization,omitempty"` // e.g., 0.85 for 85% full
 	// For Phase 2: We will send hashed prefixes of what currently lives in this worker's KV Cache
 	CachedPrefixes []uint64 `protobuf:"varint,4,rep,packed,name=cached_prefixes,json=cachedPrefixes,proto3" json:"cached_prefixes,omitempty"`
-	unknownFields  protoimpl.UnknownFields
-	sizeCache      protoimpl.SizeCache
+	// --- Experimental instrumentation (added for the manuscript evaluation) ---
+	// Monotonically increasing counter, per worker instance. Lets the gateway
+	// discard out-of-order or duplicated heartbeat updates.
+	HeartbeatSeq uint64 `protobuf:"varint,5,opt,name=heartbeat_seq,json=heartbeatSeq,proto3" json:"heartbeat_seq,omitempty"`
+	// Unique per process start. A restarted worker keeps its logical id but
+	// presents a new instance id, so the gateway can safely reset its
+	// sequence-number expectations instead of freezing the worker out.
+	InstanceId string `protobuf:"bytes,6,opt,name=instance_id,json=instanceId,proto3" json:"instance_id,omitempty"`
+	// Fingerprints resident in the host-tier (offloaded) pool. The fast tier
+	// is advertised separately through cached_prefixes.
+	OffloadedPrefixes []uint64 `protobuf:"varint,7,rep,packed,name=offloaded_prefixes,json=offloadedPrefixes,proto3" json:"offloaded_prefixes,omitempty"`
+	// Number of in-flight requests currently being served by this worker.
+	QueueDepth int32 `protobuf:"varint,8,opt,name=queue_depth,json=queueDepth,proto3" json:"queue_depth,omitempty"`
+	// Approximate bytes of KV state resident in the fast tier.
+	CacheBytes    uint64 `protobuf:"varint,9,opt,name=cache_bytes,json=cacheBytes,proto3" json:"cache_bytes,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
 }
 
 func (x *HeartbeatRequest) Reset() {
@@ -211,9 +258,46 @@ func (x *HeartbeatRequest) GetCachedPrefixes() []uint64 {
 	return nil
 }
 
+func (x *HeartbeatRequest) GetHeartbeatSeq() uint64 {
+	if x != nil {
+		return x.HeartbeatSeq
+	}
+	return 0
+}
+
+func (x *HeartbeatRequest) GetInstanceId() string {
+	if x != nil {
+		return x.InstanceId
+	}
+	return ""
+}
+
+func (x *HeartbeatRequest) GetOffloadedPrefixes() []uint64 {
+	if x != nil {
+		return x.OffloadedPrefixes
+	}
+	return nil
+}
+
+func (x *HeartbeatRequest) GetQueueDepth() int32 {
+	if x != nil {
+		return x.QueueDepth
+	}
+	return 0
+}
+
+func (x *HeartbeatRequest) GetCacheBytes() uint64 {
+	if x != nil {
+		return x.CacheBytes
+	}
+	return 0
+}
+
 type HeartbeatAck struct {
-	state         protoimpl.MessageState `protogen:"open.v1"`
-	Success       bool                   `protobuf:"varint,1,opt,name=success,proto3" json:"success,omitempty"`
+	state   protoimpl.MessageState `protogen:"open.v1"`
+	Success bool                   `protobuf:"varint,1,opt,name=success,proto3" json:"success,omitempty"`
+	// False when the gateway rejected the update as stale or out-of-order.
+	Accepted      bool `protobuf:"varint,2,opt,name=accepted,proto3" json:"accepted,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -255,6 +339,13 @@ func (x *HeartbeatAck) GetSuccess() bool {
 	return false
 }
 
+func (x *HeartbeatAck) GetAccepted() bool {
+	if x != nil {
+		return x.Accepted
+	}
+	return false
+}
+
 var File_kvmesh_proto protoreflect.FileDescriptor
 
 const file_kvmesh_proto_rawDesc = "" +
@@ -266,18 +357,30 @@ const file_kvmesh_proto_rawDesc = "" +
 	"max_tokens\x18\x02 \x01(\x05R\tmaxTokens\x12 \n" +
 	"\vtemperature\x18\x03 \x01(\x02R\vtemperature\x12\x1d\n" +
 	"\n" +
-	"request_id\x18\x04 \x01(\tR\trequestId\"G\n" +
+	"request_id\x18\x04 \x01(\tR\trequestId\"\xae\x01\n" +
 	"\x10GenerateResponse\x12\x12\n" +
 	"\x04text\x18\x01 \x01(\tR\x04text\x12\x1f\n" +
 	"\vis_finished\x18\x02 \x01(\bR\n" +
-	"isFinished\"\xa6\x01\n" +
+	"isFinished\x12\x1b\n" +
+	"\tworker_id\x18\x03 \x01(\tR\bworkerId\x12!\n" +
+	"\fcache_status\x18\x04 \x01(\tR\vcacheStatus\x12%\n" +
+	"\x0eadvertised_hit\x18\x05 \x01(\bR\radvertisedHit\"\xdd\x02\n" +
 	"\x10HeartbeatRequest\x12\x1b\n" +
 	"\tworker_id\x18\x01 \x01(\tR\bworkerId\x12!\n" +
 	"\fgrpc_address\x18\x02 \x01(\tR\vgrpcAddress\x12)\n" +
 	"\x10vram_utilization\x18\x03 \x01(\x02R\x0fvramUtilization\x12'\n" +
-	"\x0fcached_prefixes\x18\x04 \x03(\x04R\x0ecachedPrefixes\"(\n" +
+	"\x0fcached_prefixes\x18\x04 \x03(\x04R\x0ecachedPrefixes\x12#\n" +
+	"\rheartbeat_seq\x18\x05 \x01(\x04R\fheartbeatSeq\x12\x1f\n" +
+	"\vinstance_id\x18\x06 \x01(\tR\n" +
+	"instanceId\x12-\n" +
+	"\x12offloaded_prefixes\x18\a \x03(\x04R\x11offloadedPrefixes\x12\x1f\n" +
+	"\vqueue_depth\x18\b \x01(\x05R\n" +
+	"queueDepth\x12\x1f\n" +
+	"\vcache_bytes\x18\t \x01(\x04R\n" +
+	"cacheBytes\"D\n" +
 	"\fHeartbeatAck\x12\x18\n" +
-	"\asuccess\x18\x01 \x01(\bR\asuccess2S\n" +
+	"\asuccess\x18\x01 \x01(\bR\asuccess\x12\x1a\n" +
+	"\baccepted\x18\x02 \x01(\bR\baccepted2S\n" +
 	"\n" +
 	"WorkerNode\x12E\n" +
 	"\x0eGenerateStream\x12\x17.kvmesh.GenerateRequest\x1a\x18.kvmesh.GenerateResponse0\x012N\n" +
